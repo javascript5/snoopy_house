@@ -203,13 +203,13 @@ body {
 .end_credit {
     position: absolute;
     bottom: 100px;
-    font-size: 3.5em;
     width: 45%;
+    margin:auto;
     display: flex;
     text-align: center;
     margin: auto;
     font-family: THSarabun;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .res_img {
@@ -306,9 +306,22 @@ body {
     margin-bottom: 8%;
 }
 
-.kanaheis_end_inner span {
-    font-size: 2.5em;
+.kanaheis_end_text{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: #7dc184;
+
+    display: flex;
+}
+.kanaheis_end_text span {
+    width: 45%;
+    word-wrap: break-word;
+    float: left;
+    margin: auto;
+    font-size: 2em;
     font-family: THSarabun;
+    padding-bottom: 3%;
 }
 
 .kanahei_p_1 {
@@ -339,24 +352,78 @@ body {
 }
 
 .map_p_1 {
-    margin-top: 24%;
-    margin-left: 35%;
-    width: 39%;
+    margin-top: 45%;
+    margin-left: 45%;
+    width: 30%;
     float: left;
+    position: relative;
+}
+
+.map_p_1::before{
+    content: "";
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    width: 200px;
+    height: 187px;
+    top:-60%;
+    left:-40%;
+    background-size: cover;
+    background-image: url('../images/props/map_p_1_2.png');
+}
+
+.map_p_1:hover::before{
+    display: block;
 }
 
 .map_p_2 {
-    margin-top: 30%;
+    margin-top: 60%;
     margin-left: 9%;
     width: 39%;
     float: left;
+    position: relative;
+}
+
+.map_p_2::before{
+    content: "";
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    top:-130%;
+    left:10%;
+    background-size: cover;
+    background-image: url('../images/props/map_p_2_2.png');
+}
+
+.map_p_2:hover::before{
+    display: block;
 }
 
 .map_p_3 {
-    margin-top: 15%;
+    margin-top: 35%;
     margin-left: 40%;
     width: 39%;
     float: left;
+    position: relative;
+}
+
+.map_p_3::before{
+    content: "";
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    width: 300px;
+    height: 227px;
+    top: -71%;
+    left: 22%;
+    background-size: cover;
+    background-image: url('../images/props/map_p_3_2.png');
+}
+
+.map_p_3:hover::before{
+    display: block;
 }
 
 .map_p_4 {
@@ -364,6 +431,24 @@ body {
     margin-left: 51%;
     width: 39%;
     float: left;
+    position: relative;
+}
+
+.map_p_4::before{
+    content: "";
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    top: -78%;
+    left: 60%;
+    background-size: cover;
+    background-image: url('../images/props/map_p_4_2.png');
+}
+
+.map_p_4:hover::before{
+    display: block;
 }
 
 .map_p_5 {
@@ -475,11 +560,11 @@ body {
 }
 
 .map_end span {
-    width: 38%;
+    width: 45%;
     word-wrap: break-word;
     float: left;
     margin: auto;
-    font-size: 2.5em;
+    font-size: 2em;
     font-family: THSarabun;
     padding-bottom: 3%;
 }
