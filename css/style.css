@@ -13,6 +13,11 @@ body {
     src: url('../fonts/THSarabun.ttf');
 }
 
+@font-face {
+    font-family: PridiExtraLight;
+    src: url('../fonts/Pridi-ExtraLight.ttf');
+}
+
 #snoopy_house_header {
     float: left;
     background-color: #fff0d9;
@@ -73,7 +78,7 @@ body {
     font-size: 1.5em;
 }
 
-.page_title {
+.snoopy_house_page_title {
     float: left;
     width: 100%;
     text-align: center;
@@ -82,13 +87,13 @@ body {
     margin-top: 100px;
 }
 
-.page_title h1 {
+.snoopy_house_page_title h1 {
     font-size: 7em;
     position: relative;
     font-family: PEANUTS;
 }
 
-.page_title h1::before {
+.snoopy_house_page_title h1::before {
     content: url('../images/props/bird01.png');
     position: absolute;
     width: 94px;
@@ -209,7 +214,193 @@ body {
     display: block;
 }
 
+.kanaheis_in_body_h {
+    width: 100%;
+    float: left;
+    margin-top: 8%;
+}
+
+.kanaheis_in_body_h_img {
+    width: 60%;
+    margin: auto;
+    border: 6px solid #57392d;
+    background-color: #ffb0ac;
+    margin-top: -16px;
+    padding: 2%;
+}
+
+.kanaheis_header_img {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.kanaheis_header_img img {
+    width: 100%;
+}
+
+.kanaheis_in_body_h_img img {
+    width: 100%;
+}
+
+.kanaheis_section_picture {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.kanaheis_section_text {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+    background-color: #ffe3e2;
+}
+
+.kanaheis_section_text span {
+    font-family: PridiExtraLight;
+    font-size: 1.8em;
+}
+
+.kanaheis_section_text ul {
+    display: flex;
+    padding: 5%;
+}
+
+.kanaheis_section_text ul li {
+    width: 50%;
+    list-style: none;
+    margin-right: 40px;
+}
+
+.kanaheis_header_logo_img {
+    width: 42%;
+    margin: auto;
+    margin-bottom: 8%;
+}
+
+.kanaheis_header_logo_img img {
+    width: 100%;
+}
+
+.kanaheis_end {
+    width: 100%;
+    float: left;
+    background-color: #7dc184;
+}
+
+.kanaheis_end_inner {
+    width: 60%;
+    margin: auto;
+    padding: 2%;
+    text-align: center;
+}
+
+.kanaheis_end_inner img {
+    width: 100%;
+    margin-bottom: 8%;
+}
+
+.kanaheis_end_inner span {
+    font-size: 2.5em;
+    font-family: THSarabun;
+}
+
+.kanahei_p_1 {
+    position: absolute;
+    right: 0;
+    width: 12%;
+}
+
+.kanahei_p_2 {
+    position: absolute;
+    left: 0;
+    width: 12%;
+}
+
+.map {
+    float: left;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-image: url(../images/props/map.png);
+}
+
+.clearfix {
+    display: inline-block
+}
+
+.map_p_1 {
+    margin-top: 24%;
+    margin-left: 35%;
+    width: 39%;
+    float: left;
+}
+
+.map_p_2 {
+    margin-top: 30%;
+    margin-left: 9%;
+    width: 39%;
+    float: left;
+}
+
+.map_p_3 {
+    margin-top: 15%;
+    margin-left: 40%;
+    width: 39%;
+    float: left;
+}
+
+.map_p_4 {
+    margin-top: 44%;
+    margin-left: 51%;
+    width: 39%;
+    float: left;
+}
+
+.map_p_5 {
+    margin-top: 125%;
+    margin-left: 51%;
+    width: 90%;
+    float: left;
+    display: flex;
+}
+
+
+.map_p_5 img{
+    width: 75%;
+    height: auto;
+}
+.map_p_5 span{
+    font-size: 2em;
+    font-family: PridiExtraLight;
+}
+
+.col {
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.inner_col{ 
+    width: 100%;
+    margin-right: 5%;
+}
+.map_p_1 img,
+.map_p_2 img,
+.map_p_3 img,
+.map_p_4 img {
+    width: 100%;
+}
+
 @media only screen and (max-width: 1000px) {
+    .kanahei_p_1,
+    .kanahei_p_2 {
+        display: none;
+    }
     .snoopy_house_hbd {
         margin: auto;
         margin-top: 20%;
@@ -253,7 +444,7 @@ body {
     #snoopy_house_body {
         margin-top: -33px;
     }
-    .page_title h1::before {
+    .snoopy_house_page_title h1::before {
         left: -5%;
         top: -130px;
     }
@@ -265,5 +456,18 @@ body {
         margin-top: 50%;
         width: 90%;
         bottom: 0;
+    }
+    .kanaheis_section_text ul {
+        flex-direction: column;
+    }
+    .kanaheis_section_text ul li {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .kanaheis_in_body_h_img {
+        width: 75%;
+    }
+    .kanaheis_header_img {
+        width: 90%;
     }
 }
