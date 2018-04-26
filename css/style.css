@@ -470,4 +470,21 @@ body {
     .kanaheis_header_img {
         width: 90%;
     }
+
+    .map {
+        background-image: url(../images/props/map_res.png);
+    }
+
+    .map_p_5{
+        flex-direction: column;
+        margin-top: 121%;
+    }
+
+    .inner_col {
+        text-align: center;
+    }
+
+    .map_p_5 img {
+        width: 44%;
+    }
 }
