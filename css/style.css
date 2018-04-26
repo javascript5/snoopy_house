@@ -8,6 +8,11 @@ body {
     src: url('../fonts/PEANUTS_.TTF');
 }
 
+@font-face{
+    font-family:Cookie;
+    src: url('../fonts/Cookiesandcream.otf');
+}
+
 @font-face {
     font-family: THSarabun;
     src: url('../fonts/THSarabun.ttf');
@@ -76,6 +81,7 @@ body {
 
 .nav_text span {
     font-size: 1.5em;
+    font-family: Cookie;
 }
 
 .snoopy_house_page_title {
