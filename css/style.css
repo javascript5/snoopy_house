@@ -491,7 +491,7 @@ body {
 }
 
 .map_p_7 {
-    margin-top: 149%;
+    margin-top: 139%;
     margin-left: 50%;
     width: 90%;
     float: left;
@@ -577,7 +577,9 @@ body {
 
 @media only screen and (max-width: 1515px) {
     .map_p_5 span,
-    .map_p_6 span {
+    .map_p_6 span,
+    .map_p_7 span,
+    .map_p_8 span {
         font-size: 1.5em;
     }
 }
